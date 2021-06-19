@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="stylesheet" href="./src/responsive.css" />
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="form-box">
+        <form action="" method="post" id="add-item-form" autocomplete="off">
+          <h1 id="form-title">Add Grocery Item</h1>
+          <div>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              value=""
+              autofocus
+              required
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              id="quantity"
+              name="quantity"
+              placeholder="Quantity"
+              value=""
+              required
+            />
+          </div>
+          <div class="button-box">
+            <button type="submit">ADD</button>
+            <button type="reset" style="display: none;">
+              CANCEL
+            </button>
+          </div>
+        </form>
+      </div>
+      <div id="list-box">
+        <div id="list-box-title">Item List</div>
+        <div id="list-box-items"></div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
